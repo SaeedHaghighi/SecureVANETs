@@ -1,0 +1,10 @@
+# Secure Hierarchical Federated Learning in Vehicular Networks Using Dynamic Client Selection and Anomaly Detection
+
+Hierarchical Federated Learning (HFL) faces the significant challenge of adversarial or unreliable vehicles in vehicular networks, which can compromise the model's integrity through misleading updates. Addressing this, our study introduces a novel framework that integrates dynamic vehicle selection and robust anomaly detection mechanisms, aiming to optimize participant selection and mitigate risks associated with malicious contributions. Our approach involves a comprehensive vehicle reliability assessment, considering historical accuracy, contribution frequency, and anomaly records. An anomaly detection algorithm is utilized to identify anomalous behavior by analyzing the cosine similarity of local or model parameters during the federated learning (FL) process. These anomaly records are then registered and combined with past performance for accuracy and contribution frequency to identify the most suitable vehicles for each learning round. Dynamic client selection and anomaly detection algorithms are deployed at different levels, including cluster heads (CHs), cluster members (CMs), and the Evolving Packet Core (EPC), to detect and filter out spurious updates. Through simulation-based performance evaluation, our proposed algorithm demonstrates remarkable resilience even under intense attack conditions. Even in the worst-case scenarios, it achieves convergence times at 63 % as effective as those in scenarios without any attacks. Conversely, in scenarios without utilizing our proposed algorithm, there is a high likelihood of non-convergence in the FL process.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+
+  ## Introduction
+  Anomaly detection mechanisms have been developed against model poisoning attacks in FL to identify distinguishable differences between malicious and benign models. Dynamic client selection follows anomaly detection in FL to optimize the selection of participating vehicles for each learning round based on the output of the anomaly detection.
